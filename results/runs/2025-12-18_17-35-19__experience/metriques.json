@@ -1,0 +1,14 @@
+{
+  "resultats": [
+    {
+      "modele": "logistic_regression",
+      "accuracy_moyenne": 0.9888888888888889,
+      "accuracy_ecart_type": 0.006585052934548121,
+      "log_loss_moyenne": 0.1085561088979428,
+      "log_loss_ecart_type": 0.008473735304763957,
+      "top_k_accuracy_moyenne": 0.998989898989899,
+      "top_k_accuracy_ecart_type": 0.002258654522727075,
+      "n_folds": 5
+    }
+  ]
+}

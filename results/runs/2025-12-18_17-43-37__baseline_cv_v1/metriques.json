@@ -1,0 +1,64 @@
+{
+  "resultats": [
+    {
+      "modele": "random_forest",
+      "accuracy_moyenne": 0.9818181818181818,
+      "accuracy_ecart_type": 0.007659470145506622,
+      "log_loss_moyenne": 0.7600193022059268,
+      "log_loss_ecart_type": 0.014758068669924044,
+      "top_k_accuracy_moyenne": 1.0,
+      "top_k_accuracy_ecart_type": 0.0,
+      "n_folds": 5
+    },
+    {
+      "modele": "svm",
+      "accuracy_moyenne": 0.9878787878787879,
+      "accuracy_ecart_type": 0.007659470145506614,
+      "log_loss_moyenne": 2.353156880838673,
+      "log_loss_ecart_type": 0.031640438474030454,
+      "top_k_accuracy_moyenne": 0.998989898989899,
+      "top_k_accuracy_ecart_type": 0.002258654522727075,
+      "n_folds": 5
+    },
+    {
+      "modele": "mlp",
+      "accuracy_moyenne": 0.9808080808080808,
+      "accuracy_ecart_type": 0.0065850529345481724,
+      "log_loss_moyenne": 0.07951629701635218,
+      "log_loss_ecart_type": 0.023095926545217,
+      "top_k_accuracy_moyenne": 0.998989898989899,
+      "top_k_accuracy_ecart_type": 0.002258654522727075,
+      "n_folds": 5
+    },
+    {
+      "modele": "gradient_boosting",
+      "accuracy_moyenne": 0.6585858585858586,
+      "accuracy_ecart_type": 0.0479930869422408,
+      "log_loss_moyenne": 2.4350280733644554,
+      "log_loss_ecart_type": 0.36244129676950826,
+      "top_k_accuracy_moyenne": 0.78989898989899,
+      "top_k_accuracy_ecart_type": 0.027800725140450244,
+      "n_folds": 5
+    },
+    {
+      "modele": "knn",
+      "accuracy_moyenne": 0.9616161616161616,
+      "accuracy_ecart_type": 0.011627135791132682,
+      "log_loss_moyenne": 0.26196337654063456,
+      "log_loss_ecart_type": 0.09869199215585571,
+      "top_k_accuracy_moyenne": 0.997979797979798,
+      "top_k_accuracy_ecart_type": 0.0027662755429554023,
+      "n_folds": 5
+    },
+    {
+      "modele": "logistic_regression",
+      "accuracy_moyenne": 0.9888888888888889,
+      "accuracy_ecart_type": 0.006585052934548121,
+      "log_loss_moyenne": 0.1085561088979428,
+      "log_loss_ecart_type": 0.008473735304763957,
+      "top_k_accuracy_moyenne": 0.998989898989899,
+      "top_k_accuracy_ecart_type": 0.002258654522727075,
+      "n_folds": 5
+    }
+  ]
+}
