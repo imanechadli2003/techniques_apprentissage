@@ -19,9 +19,13 @@ class ClassifieurReseauNeurones(ClassifieurBase):
             "hidden_layer_sizes": (256, 128),
             "learning_rate_init": 0.001,
             "max_iter": 2000,
+            "early_stopping": False,
             "random_state": 42,
         }
         params = {**params_defaut, **self.hyperparametres}
+        if "hidden_layer_sizes" in params and isinstance(params["hidden_layer_sizes"], list):
+         params["hidden_layer_sizes"] = tuple(params["hidden_layer_sizes"])
+
         self.modele_sklearn = MLPClassifier(**params)
 
     def entrainer(self, X: np.ndarray, y: np.ndarray) -> None:

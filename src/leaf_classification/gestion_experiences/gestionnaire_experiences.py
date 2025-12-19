@@ -54,7 +54,9 @@ class GestionnaireExperiences:
         resultats: List[Dict[str, Any]] = []
 
         for nom_modele in modeles_actifs:
-            modele = fabrique.creer_modele(nom_modele, parametres={})
+            params_par_modele = self.configuration.get("modeles_parametres", {})
+            parametres = params_par_modele.get(nom_modele, {})
+            modele = fabrique.creer_modele(nom_modele, parametres=parametres)
             cv = validateur.valider(modele, X, y, top_k=top_k, normaliser=True)
 
 

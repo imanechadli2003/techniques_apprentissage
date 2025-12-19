@@ -1,0 +1,35 @@
+tuning:
+  actif: true
+  methode: "randomized"          # "grid" ou "randomized"
+  n_iter: 25                     # 25-60 selon votre machine
+  cv_folds: 5
+  scoring: "neg_log_loss"
+  n_jobs: -1
+  random_state: 42
+  verbose: 1
+
+modeles:
+  mlp:
+    parametres_defaut:
+      hidden_layer_sizes: [256, 128]
+      learning_rate_init: 0.001
+      alpha: 0.0001
+      max_iter: 2000
+      
+    grille:
+      hidden_layer_sizes:
+        - [128, 64]
+        - [256, 128]
+        - [512, 256]
+        - [256, 256]
+      alpha: [0.00001, 0.0001, 0.001, 0.01]
+      learning_rate_init: [0.0005, 0.001, 0.003]
+      max_iter: [1500, 2000]
+
+  logistic_regression:
+    parametres_defaut:
+      C: 1.0
+      solver: "lbfgs"
+      max_iter: 2000
+    grille:
+      C: [0.1, 0.3, 1.0, 3.0, 10.0]

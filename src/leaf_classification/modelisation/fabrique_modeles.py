@@ -21,7 +21,9 @@ class FabriqueModeles:
     "mlp": ClassifieurReseauNeurones,
     "gradient_boosting": ClassifieurGradientBoosting,
     "knn": ClassifieurKNN,
-    "logistic_regression": ClassifieurRegressionLogistique,        }
+    "logistic_regression": ClassifieurRegressionLogistique,
+    "mlp_tuned": ClassifieurReseauNeurones,
+        }
     )
 
     def creer_modele(self, nom: str, parametres: Dict[str, Any] | None = None) -> ClassifieurBase:

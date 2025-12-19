@@ -44,5 +44,5 @@ modeles_parametres:
     learning_rate_init: 0.003
     alpha: 0.01
     max_iter: 1500
-    early_stopping: false
+    early_stopping: true
 
