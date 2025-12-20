@@ -101,7 +101,6 @@ Les figures comparent les performances en validation croisée versus ensemble te
 │   ├── optimisation_validation/
 │   ├── gestion_experiences/
 │   └── utils/
-├── tests/                        # Tests unitaires
 ├── main.py                       # Point d'entrée du projet
 ├── requirements.txt
 └── README.md
