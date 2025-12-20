@@ -90,7 +90,7 @@ Les figures comparent les performances en validation croisée versus ensemble te
 
 ```
 ├── configs/                      # Fichiers YAML de configuration
-├── data/                         # Données (raw, processed)
+├── data/                         # Données 
 ├── docs/                         # Documentation et diagrammes UML
 ├── notebooks/                    # Analyse exploratoire (Jupyter)
 ├── results/                      # Résultats expérimentaux
