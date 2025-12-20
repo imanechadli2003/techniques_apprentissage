@@ -127,4 +127,5 @@ Un diagramme UML décrivant l’architecture du projet est fourni dans :
 docs/diagramme_classes.png
 
 ```
-
+### Références
+https://www.kaggle.com/c/leaf-classification
