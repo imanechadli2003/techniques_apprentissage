@@ -122,4 +122,10 @@ pip install -r requirements.txt
 ```bash
 python main.py --config configs/experience.yaml
 ```
+### Diagramme de classes
+Un diagramme UML décrivant l’architecture du projet est fourni dans :
+```
+docs/diagramme_classes.puml
+
+```
 
