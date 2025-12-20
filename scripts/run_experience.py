@@ -21,7 +21,7 @@ def creer_dossier_run(dossier_runs: Path, nom_experience: str) -> Path:
     return chemin_run
 
 
-def main() -> None:
+def run_experience(chemin_config: str) -> None:    
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--config",
@@ -58,4 +58,10 @@ def main() -> None:
    
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--config", required=True)
+    args = parser.parse_args()
+
+    run_experience(args.config)
