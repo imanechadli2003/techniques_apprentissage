@@ -88,4 +88,43 @@ Une **fabrique de modèles** permet une création uniforme et extensible des cla
 
 ##  Résultats
 Les résultats de chaque expérience sont sauvegardés dans :
+results/runs/<date>__<nom_experience>/
+et nos résultats finals qu'on a présenté dans le rapport sont sauvegardées ici:
+/results/runs/final_results
+
+Fichiers importants :
+- `comparaison.csv` : tableau récapitulatif (CV + holdout)
+- `metriques.json` : métriques détaillées
+- `results/figures/` : figures utilisées dans le rapport
+
+Les figures comparent les performances :
+- validation croisée vs ensemble test
+- log loss et accuracy
+
+---
+##  Structure du projet
+├── configs/ # Fichiers YAML de configuration
+├── data/ # Données (raw, processed)
+├── docs/ # Documentation et diagrammes UML
+├── notebooks/ # Analyse exploratoire (Jupyter)
+├── results/ # Résultats expérimentaux
+├── scripts/ # Scripts d’exécution
+├── src/leaf_classification/
+│ ├── gestion_donnees/
+│ ├── modelisation/
+│ ├── optimisation_validation/
+│ ├── gestion_experiences/
+│ └── utils/
+├── tests/ # Tests unitaires
+├── main.py # Point d’entrée du projet
+├── requirements.txt
+└── README.md
+
+##  Exécution du projet
+### 1️ Installation des dépendances
+```bash
+pip install -r requirements.txt
+### 2 Lancer une expérience:
+```bash
+python main.py --config configs/experience.yaml
 
