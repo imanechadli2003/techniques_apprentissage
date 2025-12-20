@@ -1,0 +1,16 @@
+sorties:
+  dossier_runs: "results/runs"
+
+donnees:
+  chemin_train_zip: "data/raw/train.csv.zip"
+  chemin_test_zip: "data/raw/test.csv.zip"
+  dossier_extraction: "data/raw/extracted"
+
+validation:
+  n_folds: 5
+  strategie: "stratified"
+
+top_k: 5
+
+modeles_actifs:
+  - "logistic_regression"

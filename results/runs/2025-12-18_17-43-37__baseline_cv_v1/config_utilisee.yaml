@@ -1,0 +1,31 @@
+nom_experience: "baseline_cv_v1"
+seed: 42
+
+donnees:
+  chemin_train_zip: "data/raw/train.csv.zip"
+  chemin_test_zip: "data/raw/test.csv.zip"
+  chemin_sample_zip: "data/raw/sample_submission.csv.zip"
+  dossier_extraction: "data/raw/extracted"
+
+sorties:
+  dossier_runs: "results/runs"
+  dossier_logs: "logs"
+  dossier_models: "models"
+
+validation:
+  n_folds: 5
+  strategie: "stratified"
+
+metriques:
+  - "log_loss"
+  - "accuracy"
+  - "top_k_accuracy"
+top_k: 5
+
+modeles_actifs:
+  - "random_forest"
+  - "svm"
+  - "mlp"
+  - "gradient_boosting"
+  - "knn"
+  - "logistic_regression"

@@ -1,0 +1,74 @@
+{
+  "resultats": [
+    {
+      "modele": "random_forest",
+      "accuracy_moyenne": 0.9808080808080808,
+      "accuracy_ecart_type": 0.007491109582924919,
+      "log_loss_moyenne": 0.7598132813070155,
+      "log_loss_ecart_type": 0.015058543497165476,
+      "top_k_accuracy_moyenne": 1.0,
+      "top_k_accuracy_ecart_type": 0.0,
+      "n_folds": 5
+    },
+    {
+      "modele": "svm",
+      "accuracy_moyenne": 0.9868686868686869,
+      "accuracy_ecart_type": 0.009174698042719682,
+      "log_loss_moyenne": 2.3546837088048593,
+      "log_loss_ecart_type": 0.03235196235198754,
+      "top_k_accuracy_moyenne": 0.998989898989899,
+      "top_k_accuracy_ecart_type": 0.002258654522727075,
+      "n_folds": 5
+    },
+    {
+      "modele": "mlp",
+      "accuracy_moyenne": 0.9545454545454545,
+      "accuracy_ecart_type": 0.014284985478516105,
+      "log_loss_moyenne": 0.3211799972339943,
+      "log_loss_ecart_type": 0.12576140516737655,
+      "top_k_accuracy_moyenne": 0.9949494949494948,
+      "top_k_accuracy_ecart_type": 0.008747731351357974,
+      "n_folds": 5
+    },
+    {
+      "modele": "gradient_boosting",
+      "accuracy_moyenne": 0.6585858585858586,
+      "accuracy_ecart_type": 0.049690399499995326,
+      "log_loss_moyenne": 2.423903652735425,
+      "log_loss_ecart_type": 0.3699618544643687,
+      "top_k_accuracy_moyenne": 0.7909090909090908,
+      "top_k_accuracy_ecart_type": 0.028480549858326612,
+      "n_folds": 5
+    },
+    {
+      "modele": "knn",
+      "accuracy_moyenne": 0.9606060606060606,
+      "accuracy_ecart_type": 0.010949234034686277,
+      "log_loss_moyenne": 0.2640069116797724,
+      "log_loss_ecart_type": 0.09886195352960928,
+      "top_k_accuracy_moyenne": 0.997979797979798,
+      "top_k_accuracy_ecart_type": 0.0027662755429554023,
+      "n_folds": 5
+    },
+    {
+      "modele": "logistic_regression",
+      "accuracy_moyenne": 0.9868686868686869,
+      "accuracy_ecart_type": 0.005758461742924937,
+      "log_loss_moyenne": 0.10824561065079649,
+      "log_loss_ecart_type": 0.008647002648728827,
+      "top_k_accuracy_moyenne": 0.998989898989899,
+      "top_k_accuracy_ecart_type": 0.002258654522727075,
+      "n_folds": 5
+    },
+    {
+      "modele": "mlp_tuned",
+      "accuracy_moyenne": 0.9747474747474747,
+      "accuracy_ecart_type": 0.008747731351357974,
+      "log_loss_moyenne": 0.09357745495596359,
+      "log_loss_ecart_type": 0.032754557437692296,
+      "top_k_accuracy_moyenne": 0.998989898989899,
+      "top_k_accuracy_ecart_type": 0.002258654522727075,
+      "n_folds": 5
+    }
+  ]
+}
