@@ -49,17 +49,12 @@ class GestionnaireExperiences:
         else:
             X_train_dev, y_train_dev = X_df, y_ser
             X_holdout, y_holdout = None, None
+        
+        # 2) Préprocessing
         preproc = PreprocesseurDonnees()
         preproc.encodeur_labels.fit(y_train_dev.values)
         y_train = preproc.transformer_labels(y_train_dev)
         X_train = X_train_dev
-
-
-        # 2) Préprocessing
-        preproc = PreprocesseurDonnees()
-        preproc.encodeur_labels.fit(y_ser.values)
-        y = preproc.transformer_labels(y_ser)
-        X = X_df
 
         # 3) Validation croisée
         cfg_v = self.configuration["validation"]
