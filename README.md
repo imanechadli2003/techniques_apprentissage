@@ -1,9 +1,91 @@
-# techniques_apprentissage
+# Leaf Classification — Projet IFT712
 
-## Installation
+Projet de session du cours **IFT712 – Techniques d’apprentissage**.  
+L’objectif est de comparer plusieurs méthodes de classification supervisée sur le jeu de données **Leaf Classification** (Kaggle), en respectant une démarche scientifique rigoureuse : validation croisée, recherche d’hyperparamètres et évaluation sur un ensemble test indépendant.
 
-Create a virtual environment and install the dependencies:
+---
 
-```bash
-pip install -r requirements.txt
-```
+##  Équipe
+- Imane Chadli
+- Adien Gagnon
+- Jacob Tremblay  
+
+---
+
+##  Objectifs du projet
+- Implémenter **au moins six classificateurs** avec `scikit-learn`
+- Comparer leurs performances à l’aide de **bonnes pratiques expérimentales**
+- Utiliser :
+  - validation croisée stratifiée
+  - recherche d’hyperparamètres
+  - métriques adaptées au problème (log loss)
+- Évaluer les performances finales sur un **ensemble test indépendant**
+
+---
+
+##  Jeu de données
+- **Leaf Classification** (Kaggle)
+- 990 observations d’entraînement
+- 99 classes
+- 193 caractéristiques numériques par observation
+
+Le jeu de données fournit déjà des descripteurs numériques, ce qui limite le besoin d’ingénierie de caractéristiques avancée.
+
+---
+
+##  Méthodologie
+
+### Séparation des données
+- **80 %** : ensemble de développement (`train_dev`)
+  - validation croisée
+  - recherche d’hyperparamètres
+- **20 %** : ensemble test final (`holdout`)
+  - utilisé une seule fois pour l’évaluation finale
+
+La séparation est **stratifiée par classe** afin de préserver la distribution des données.
+
+---
+
+### Validation croisée
+- Validation croisée **stratifiée à 5 plis**
+- Normalisation (StandardScaler) :
+  - apprise uniquement sur les données d’entraînement de chaque pli
+  - appliquée ensuite au pli de validation
+- Aucune fuite de données entre entraînement et test
+
+---
+
+### Métriques utilisées
+- **Log loss** (métrique principale, cohérente avec le challenge Kaggle)
+- Accuracy
+- Top-k accuracy (k = 5)
+
+---
+
+##  Modèles implémentés
+Les six modèles suivants ont été implémentés via une architecture orientée objet :
+
+1. Régression logistique
+2. k-plus proches voisins (KNN)
+3. Forêt aléatoire (Random Forest)
+4. SVM (Support Vector Machine)
+5. Gradient Boosting
+6. Réseau de neurones multi-couches (MLP)
+
+Une **fabrique de modèles** permet une création uniforme et extensible des classificateurs.
+
+---
+
+##  Recherche d’hyperparamètres
+- Recherche d’hyperparamètres effectuée pour le modèle MLP
+- Méthode : `RandomizedSearchCV`
+- Optimisation basée sur la **log loss**
+- Comparaison claire entre :
+  - MLP baseline
+  - MLP tuné (modèle final)
+
+---
+
+##  Résultats
+Les résultats de chaque expérience sont sauvegardés dans :
+
