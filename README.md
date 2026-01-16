@@ -1,6 +1,5 @@
-# Leaf Classification — Projet IFT712
+# Leaf Classification — Projet 
 
-Projet de session du cours IFT712 – Techniques d'apprentissage.
 
 L'objectif est de comparer plusieurs méthodes de classification supervisée sur le jeu de données Leaf Classification (Kaggle), en respectant une démarche scientifique rigoureuse : validation croisée, recherche d'hyperparamètres et évaluation sur un ensemble test indépendant.
 
